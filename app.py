@@ -14,7 +14,8 @@ image2 = Image.open('menu1.jpg')
 image3 = Image.open('menu2.jpg')
 
 #MODEL_URL = "https://github.com/GemmyTheGeek/FoodyDudy/raw/main/resnet34-10.pkl"
-MODEL_URL = "https://drive.google.com/uc?export=download&id=1pia3AgzlEro5rjRN3t4W-ecRjeBzj4xk"
+#MODEL_URL = "https://drive.google.com/uc?export=download&id=1pia3AgzlEro5rjRN3t4W-ecRjeBzj4xk"
+MODEL_URL = "http://freelyblog.com/resnet34-10.pkl"
 urllib.request.urlretrieve(MODEL_URL, "model.pkl")
 learn_inf = load_learner('model.pkl', cpu=True)
 
